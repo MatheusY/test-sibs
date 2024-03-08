@@ -5,6 +5,7 @@ import com.example.testsibs.exception.InvalidFieldsException;
 import com.example.testsibs.model.entity.Order;
 import com.example.testsibs.service.IOrderService;
 import com.example.testsibs.views.vo.OrderVO;
+import io.swagger.annotations.SwaggerDefinition;
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

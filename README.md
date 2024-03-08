@@ -9,6 +9,8 @@ docker-compose up --build -d
 ```
 After completed this action, wait one minute and access http://localhost:8090/swagger-ui.html
 
+Logs are in logs/app.logs.
+
 To shutdown the application run the command: 
 
 ```bash
