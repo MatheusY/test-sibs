@@ -1,21 +1,15 @@
-# Passos para executar a aplicação
+# Steps for executing the application
 
-Na pasta do projeto faça o build do projeto.
+Requirement: Docker installed in your machine
 
-```bash
-mvn clean install
-```
-
-Depois faça o build e rode o docker-compose em background do projeto com o seguiente comando
+Run the docker compose
 
 ```bash
 docker-compose up --build -d
 ```
-Espere um minuto para inserir todos os dados, e pode fazer chamada Rest com essa estrutura
+After completed this action, wait one minute and access http://localhost:8090/swagger-ui.html
 
-localhost:8090/produto/{nome do produto}?quantidadeLojas={quantidade de estabelecimentos}
-
-Para derrubar o docker use o comando 
+To shutdown the application run the command: 
 
 ```bash
 docker-compose down

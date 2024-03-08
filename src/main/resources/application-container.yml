@@ -8,9 +8,6 @@ spring:
       ddl-auto: create
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://postgresql-db:5432/teste_gft
+    url: jdbc:postgresql://postgresql-db:5432/test_sibs
     username: postgres
     password: postgres
-    
-data:
-  path: /app/massa/

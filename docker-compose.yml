@@ -12,11 +12,11 @@ services:
     environment:
         POSTGRES_USER: postgres
         POSTGRES_PASSWORD: postgres
-        POSTGRES_DB: teste_gft
+        POSTGRES_DB: test_sibs
    
   javaservice:
-    image: matheusy/teste-gft
-    container_name: teste-gft-app
+    image: matheusy/test_sibs
+    container_name: test_sibs_app
     build: 
       context: .
       dockerfile: Dockerfile
@@ -25,5 +25,7 @@ services:
     ports:
       - "8090:8090"
     restart: always
+    volumes:
+      - ./logs:/app/logs
     depends_on:
       - db

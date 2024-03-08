@@ -5,12 +5,30 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/teste_gft
-    username: postgres
+    url: jdbc:postgresql://localhost:5432/test_sibs
+    username: matheus
     password: postgres
-    
-data:
-  path: src/main/resources/massa/
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: matheus.matsubara.testing@gmail.com
+    password: ftwbwdkxbihlcmjp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.example.testsibs: DEBUG
+    org.hibernate: ERROR
+  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+  file.name: logs/app.log
